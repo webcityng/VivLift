@@ -3,7 +3,7 @@ import { pipeline, env } from './lib/transformers.min.js';
 
 http://env.allowRemoteModels = true;
 http://env.allowLocalModels = true;
-env.backends.onnx.wasm.wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/';
+http://env.backends.onnx.wasm.wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/';
 http://env.backends.onnx.wasm.numThreads = 1;
 
 const MODEL = 'Xenova/whisper-base.en';
